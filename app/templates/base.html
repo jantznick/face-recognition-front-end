@@ -1,12 +1,17 @@
 <html>
 	<head>
 		<title>Facial Recognition</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='public/style.css') }}">
 	</head>
 	<body>
 
+	<div id="container">
 		{% include 'menu.html' %}
 
 		{% block content %}{% endblock %}
+	</div>
+
+	<script src="{{ url_for('static', filename='public/script.js') }}"></script>
 
 	</body>
 </html>

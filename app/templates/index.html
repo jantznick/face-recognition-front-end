@@ -2,9 +2,26 @@
 
 {% block content %}
 
-<form method="POST" action="/submit-photo" enctype="multipart/form-data">
-	<input type="file" accept="image/*" capture="camera">
-	<button type="submit">Submit Photo</button>
-</form>
+<div id="tabs">
+	<div id="testing-tab" class="tab testing active">
+		Recognition
+	</div>
+	<div id="training-tab" class="tab training">
+		Training
+	</div>
+</div>
+
+<div id="content">
+	<div id="testing-content" class="tab-content testing active">
+		<form method="POST" action="/submit-photo" enctype="multipart/form-data">
+			<input type="file" accept="image/*" capture="camera">
+			<button type="submit">Submit Photo</button>
+		</form>
+	</div>
+
+	<div id="training-content" class="tab-content training">
+		Upload 10 photos to train the facial recognition
+	</div>
+</div>
 
 {% endblock %}
