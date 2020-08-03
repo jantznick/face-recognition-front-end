@@ -1,2 +1,2 @@
 # face-recognition-front-end
-Front End for Facial Recognition Webapp
+Facial Recognition Webapp using Python Flask
