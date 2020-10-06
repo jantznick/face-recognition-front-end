@@ -5,8 +5,6 @@ document.getElementById("submit-button").addEventListener('click', (event) => {
 	const fileInput = document.querySelector('#photo-upload') ;
 	const formData = new FormData();
 
-	console.log(fileInput);
-
 	formData.append('file', fileInput.files[0]);
 
 	const options = {
