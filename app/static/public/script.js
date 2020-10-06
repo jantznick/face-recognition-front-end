@@ -1,1 +1,18 @@
-// should be basic add and remove classes based on id to determine 'active' tab
+
+document.getElementById("submit-button").addEventListener('click', (event) => {
+	event.preventDefault();
+
+	const fileInput = document.querySelector('#photo-upload') ;
+	const formData = new FormData();
+
+	console.log(fileInput);
+
+	formData.append('file', fileInput.files[0]);
+
+	const options = {
+		method: 'POST',
+		body: formData,
+	};
+
+	fetch('/submit-photo', options)
+});

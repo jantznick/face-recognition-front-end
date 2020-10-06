@@ -13,10 +13,8 @@
 
 <div id="content">
 	<div id="testing-content" class="tab-content testing active">
-		<form method="POST" action="/submit-photo" enctype="multipart/form-data">
-			<input type="file" name="file" accept="image/*" capture="camera">
-			<button type="submit">Submit Photo</button>
-		</form>
+			<input type="file" name="file" accept="image/*" capture="camera" id="photo-upload">
+			<button type="submit" id="submit-button">Submit Photo</button>
 	</div>
 
 	<div id="training-content" class="tab-content training">
